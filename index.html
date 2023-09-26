@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph's Person Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1c0336ca1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><em>Computer Engineering Student</em></p>
+            <h1>Bienvenidos! I am <span>Ralph Renz</span><br> from Ateneo de Zamboanga <br> University</h1>
+        </div>
+    </div>
+</div>
+<!-- ABOUT -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Systems Development</span><br>Developing Software Systems</li>
+                            <li><span>Web Development</span><br>Developing Web Applications</li>
+                            <li><span>Android Development</span><br>Developing Android Applications</li>
+                            <li><span>Electronic Circuits</span><br>Building electronic & electrical circuits</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>Computer Engineering at Ateneo de Zamboanga University</li>
+                            <li><span>2018-2020</span><br>Senior High School <br> Humanities and Social Sciences - Salutatorian</li>
+                            <li><span>2014-2018</span><br>Junior High School - Salutatorian</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>2022-2023</span><br>President of Institute of Computer Engineers of the Philippines-AdZU Chapter</li>
+                            <li><span>2020-Present</span><br>Consistent Dean's Lister</li>
+                            <li><span>2020-Present</span><br>Full Scholar - Menzi Trust Funds Inc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>Technology</span><br>Internet of Things<br>Cloud Computing<br>Programming<br>Android App Development</li>
+                            <li><span>Coffee</span><br>Specialty Coffee<br>Espresso Machines<br>Coffee Shops<br>Coffee Equipments<br>Coffee Beans</li>
+                            <li><span>Sports</span><br>Basketball<br>Softball<br>Billiards</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/phone1.jpeg" alt="work1">
+                <div class="layer">
+                    <h3>Apartment Hunting App</h3>
+                    <p>The app that helps people to look for an apartment in our city. The app is currently under development and will be deployed soon.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/phone2.jpg" alt="work2">
+                <div class="layer">
+                    <h3>Task Management System</h3>
+                    <p>This system is used by an individual, team, or organization to complete projects efficiently by organizing and prioritizing related tasks.
+                    <br>This system uses Ruby as programming language and Ruby on Rails as its framework.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="work3">
+                <div class="layer">
+                    <h3>Online Store App</h3>
+                    <p>The app that provides people with easy access to different products they need to purchase. This is also under development and will soon be released publicly.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sanson.ralren@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09218566707</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ralphrenz.sanson"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/r.s7nson?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ralph-renz-sanson-06a7b5258"><i class="fa-brands fa-linkedin"></i></a>
+                    <p>Do you want to know me more? Click Download Resume</p>
+                </div>
+                <a href="images/Ralph's_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" id="contact_form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <div id="successMessage" style="display: none;">
+                    <p>Submission successful! Thank you</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ralph Sanson</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9kYMLe64JTeRK3lUN2CNCPkLUB1AInFoedNbZtSyaaGmqUmts5ej5Bh_tkN6VCjm5DA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact_form');
+        const successMessage = document.getElementById('successMessage');
+        
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            
+            // Perform any necessary form data validation here
+
+            // Display success message
+            successMessage.style.display = 'block';
+
+            // Clear form inputs
+            form.reset();
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+    });
+</script>
+
+</body>
+</html>
